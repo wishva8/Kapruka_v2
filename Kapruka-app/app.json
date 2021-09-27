@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Kapruka-app",
+    "slug": "Kapruka-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Kapruka-app"
+}
