@@ -133,14 +133,9 @@ export default function Product() {
                         flexDirection: "row",
 
                     }}>
-                        <Icon.Button name="plus" backgroundColor="#223F98" borderRadius={15} size={15} color="#fff" style={{
+                        <Icon.Button name="minus" backgroundColor="#223F98" borderRadius={15} size={15} color="#fff" style={{
                             width: 30,
                             height: 30,
-                            //Below lines will help to set the border radius
-                            borderBottomLeftRadius: 30,
-                            borderBottomRightRadius: 30,
-                            borderTopRightRadius: 30,
-                            borderTopLeftRadius: 30,
                             overflow: 'hidden',
                         }}>
 
@@ -151,17 +146,17 @@ export default function Product() {
                             marginStart: 10,
                             marginEnd: 10
                         }}>01</Text>
-                        <Icon.Button name="minus" backgroundColor="#223F98" borderRadius={15} size={15} color="#fff" style={{
+
+                        <Icon.Button name="plus" backgroundColor="#223F98" borderRadius={15} size={15} color="#fff" style={{
                             width: 30,
                             height: 30,
                             //Below lines will help to set the border radius
-                            // borderBottomLeftRadius: 30,
-                            // borderBottomRightRadius: 30,
-                            // borderTopRightRadius: 30,
-                            // borderTopLeftRadius: 30,
+                            borderBottomLeftRadius: 30,
+                            borderBottomRightRadius: 30,
+                            borderTopRightRadius: 30,
+                            borderTopLeftRadius: 30,
                             overflow: 'hidden',
                         }}>
-
                         </Icon.Button>
                     </View>
                 </View>
@@ -176,60 +171,62 @@ export default function Product() {
             }}>Product Detail</Text>
                 <Text style={{
                     marginTop: 10,
-                    width:"90%"
+                    width: "90%"
                 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at elit id nibh convallis ullamcorper. Curabitur convallis volutpat egestas.
                 </Text>
             </View>
 
             <View
+                style={{
+                    flexDirection: "row",
+                    paddingTop: "25px",
+                    marginLeft: 20,
+                    marginTop: 20,
+
+
+                }}
+            >
+                <View style={{
+                    // paddingRight:"50px"
+                    marginRight: 10
+                }}>
+                    <Icon.Button
                         style={{
-                            flexDirection:"row",
-                            paddingTop:"25px",
-                            margin:"25px"
-                                            
+                            borderRadius: "5px",
+                            width: "156px",
+                            height: "35px",
+                            textAlign: "center",
+                            borderColor: "#223F98",
+                            paddingLeft: "40px",
+                            borderWidth: "0.5px",
+                            backgroundColor: "#223F98",
+                            fontWeight: 300,
+                            // fontSize:"30px"
+
                         }}
-                    >
-                        <View style={{
-                            paddingRight:"50px"
-                        }}>
-                        <Icon.Button
-                                style={{
-                                    borderRadius:"5px",
-                                    width:"156px",
-                                    height:"35px",
-                                    textAlign:"center",
-                                    borderColor:"#223F98",
-                                    paddingLeft:"40px",
-                                    borderWidth:"0.5px",
-                                    backgroundColor:"#223F98",
-                                    fontWeight:300,
-                                    // fontSize:"30px"
-                                    
-                                }}
-                            >Buy Now</Icon.Button>
+                    >Buy Now</Icon.Button>
 
-                        </View>
+                </View>
 
-                        <View>
-                        <Icon.Button
-                                style={{
-                                    borderRadius:"8px",
-                                    width:"156px",
-                                    height:"35px",
-                                    textAlign:"center",
-                                    backgroundColor:"#223F98",
-                                    paddingLeft:"25px",
-                                    color:"#223F98",
-                                    backgroundColor:"#223F98",
-                                    fontWeight:300,
-                                    fontSize:"30px"
-                                    
-                                }}
-                                >Add To Cart</Icon.Button>
+                <View>
+                    <Icon.Button
+                        style={{
+                            borderRadius: "8px",
+                            width: "156px",
+                            height: "35px",
+                            textAlign: "center",
+                            backgroundColor: "#223F98",
+                            paddingLeft: "25px",
+                            color: "#223F98",
+                            fontWeight: 300,
+                            fontSize: "30px"
 
-                        </View>
-                    </View>
+                        }}
+                    >Add To Cart</Icon.Button>
+
+                </View>
+            </View>
         </View >
     )
 }
