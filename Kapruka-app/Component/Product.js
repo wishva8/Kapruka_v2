@@ -21,10 +21,38 @@ export default function Product() {
             }
             }>
                 <View style={{
+                    flexDirection: "row",
                     marginTop: 20,
+                    paddingStart: 10,
+                    paddingEnd: 10,
+
                     width: "100%",
-                }}><Text>asda</Text></View>
+                }}>
+
+                    <View style={{
+                        flexDirection: "col",
+                        width: "50%",
+                        // marginStart:20
+                    }}>
+
+                        <Icon.Button name="angle-left" size={40} backgroundColor="none" color="#000">
+
+                        </Icon.Button>
+                    </View>
+
+                    <View style={{
+                        flexDirection: "col",
+                        alignItems: 'end',
+                        justifyContent: 'flex-end',
+                        width: "50%"
+                    }}>
+                        <Icon.Button name="shopping-cart" size={30} backgroundColor="none" color="#000">
+
+                        </Icon.Button>
+                    </View>
+                </View>
                 <View style={{
+                    marginTop: 20,
                     flexDirection: "row",
                     width: "100%",
                     height: "100%",
