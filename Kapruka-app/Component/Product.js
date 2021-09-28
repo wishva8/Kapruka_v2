@@ -175,11 +175,61 @@ export default function Product() {
                 fontWeight: 500,
             }}>Product Detail</Text>
                 <Text style={{
-                    marginTop: 10
+                    marginTop: 10,
+                    width:"90%"
                 }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at elit id nibh convallis ullamcorper. Curabitur convallis volutpat egestas.
                 </Text>
             </View>
+
+            <View
+                        style={{
+                            flexDirection:"row",
+                            paddingTop:"25px",
+                            margin:"25px"
+                                            
+                        }}
+                    >
+                        <View style={{
+                            paddingRight:"50px"
+                        }}>
+                        <Icon.Button
+                                style={{
+                                    borderRadius:"5px",
+                                    width:"156px",
+                                    height:"35px",
+                                    textAlign:"center",
+                                    borderColor:"#223F98",
+                                    paddingLeft:"40px",
+                                    borderWidth:"0.5px",
+                                    backgroundColor:"#223F98",
+                                    fontWeight:300,
+                                    // fontSize:"30px"
+                                    
+                                }}
+                            >Buy Now</Icon.Button>
+
+                        </View>
+
+                        <View>
+                        <Icon.Button
+                                style={{
+                                    borderRadius:"8px",
+                                    width:"156px",
+                                    height:"35px",
+                                    textAlign:"center",
+                                    backgroundColor:"#223F98",
+                                    paddingLeft:"25px",
+                                    color:"#223F98",
+                                    backgroundColor:"#223F98",
+                                    fontWeight:300,
+                                    fontSize:"30px"
+                                    
+                                }}
+                                >Add To Cart</Icon.Button>
+
+                        </View>
+                    </View>
         </View >
     )
 }
