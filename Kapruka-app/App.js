@@ -4,6 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import Product from './Component/Product';
 import Login from './Component/Login';
 import Register from './Component/Register';
+import AddCategory from './Component/AddCategory';
+import AddProduct from './Component/AddProduct';
+import Shop from './Component/Shop';
 
 
 export default function App() {
@@ -14,7 +17,10 @@ export default function App() {
       {/* <Product/> */}
       {/* <Register></Register> */}
       {/* <Login></Login> */}
-      <Product></Product>
+      {/* <Product></Product> */}
+      {/* <AddCategory></AddCategory> */}
+      {/* <AddProduct/> */}
+      <Shop />
     </View>
   );
 }
