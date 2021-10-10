@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Product from './Component/Product';
-import Login from './Component/Login';
-import Register from './Component/Register';
-import AddCategory from './Component/AddCategory';
-import AddProduct from './Component/AddProduct';
-import Shop from './Component/Shop';
-
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Product from "./Component/Product";
+import Login from "./Component/Login";
+import Register from "./Component/Register";
+import Cart from "./Component/Cart";
+import Footer from "./Component/Footer";
+import NavHead from "./Component/NavHead";
 
 export default function App() {
   return (
@@ -18,9 +17,9 @@ export default function App() {
       {/* <Register></Register> */}
       {/* <Login></Login> */}
       {/* <Product></Product> */}
-      {/* <AddCategory></AddCategory> */}
-      {/* <AddProduct/> */}
-      <Shop />
+      <Cart></Cart>
+      {/* <NavHead></NavHead> */}
+      {/* <Footer></Footer> */}
     </View>
   );
 }
@@ -28,8 +27,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
     // justifyContent: 'center',
   },
 });
