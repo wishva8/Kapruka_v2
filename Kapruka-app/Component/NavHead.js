@@ -8,7 +8,7 @@ export default class NavHead extends Component {
       <View
         style={{
           width: "100%",
-          height: "8%",
+          height: "6%",
           backgroundColor: "#223F98",
           borderBottomEndRadius: 25,
           borderBottomStartRadius: 25,
@@ -16,7 +16,7 @@ export default class NavHead extends Component {
           shadowOffset: { width: -2, height: 4 },
           shadowOpacity: 0.2,
           shadowRadius: 4,
-          position: "fixed",
+          position: "absolute",
         }}
       >
         <View
@@ -46,7 +46,7 @@ export default class NavHead extends Component {
             style={{
               alignItems: "end",
               width: "50%",
-              marginRight: 40,
+              paddingRight:"14px",
               marginTop: "5px",
               justifyContent: "flex-end",
             }}

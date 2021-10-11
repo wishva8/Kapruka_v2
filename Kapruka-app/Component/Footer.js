@@ -62,7 +62,7 @@ export default class Footer extends Component {
             }}
           >
             <Icon.Button
-              name="store-alt"
+              name="shop"
               backgroundColor="none"
               color="white"
               size={30}
