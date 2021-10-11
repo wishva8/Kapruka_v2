@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
 export default class Footer extends Component {
@@ -61,12 +61,21 @@ export default class Footer extends Component {
               justifyContent: "flex-start",
             }}
           >
-            <Icon.Button
+            {/* <Icon.Button
               name="store-alt"
               backgroundColor="none"
               color="white"
               size={30}
-            ></Icon.Button>
+            ></Icon.Button> */}
+            <Image
+              source={require("../images/store.png")}
+              style={{
+                width: 28,
+                height: 28,
+                marginLeft: 5,
+                marginTop: 13,
+              }}
+            ></Image>
           </View>
           <View
             style={{

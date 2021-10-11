@@ -60,103 +60,12 @@ export default function Cart() {
         <View style={styles.boxContainer}>
           <view
             style={{
-              marginLeft: 45,
-              marginTop: 15,
-              width: 300,
-              flexDirection: "row",
+              width: 10,
+              height: 10,
             }}
           >
-            <Text
-              style={{
-                marginLeft: 45,
-                marginTop: -30,
-                fontWeight: "bold",
-                alignItems: "end",
-              }}
-            >
-              Black Forest 1kg
-            </Text>
-            <Text
-              style={{
-                marginLeft: 45,
-                marginTop: -30,
-                alignItems: "end",
-              }}
-            >
-              RS 2,600 x 2
-            </Text>
-            <Icon.Button
-              name="trash"
-              backgroundColor="none"
-              color="#223F98"
-            ></Icon.Button>
+            <Image source={require("../images/Blackforest_1.png")}></Image>
           </view>
-          <View
-            style={{
-              // flexDirection: "col",
-              alignItems: "end",
-              width: 300,
-              justifyContent: "flex-end",
-            }}
-          >
-            <View
-              style={{
-                flexDirection: "row",
-              }}
-            >
-              <Icon.Button
-                name="minus"
-                backgroundColor="#223F98"
-                borderRadius={15}
-                size={15}
-                color="#fff"
-                style={{
-                  width: 40,
-                  height: 30,
-                  overflow: "hidden",
-                }}
-              ></Icon.Button>
-              <Text
-                style={{
-                  fontSize: 22,
-                  fontWeight: 500,
-                  marginStart: 10,
-                  marginEnd: 10,
-                }}
-              >
-                01
-              </Text>
-
-              <Icon.Button
-                name="plus"
-                backgroundColor="#223F98"
-                borderRadius={15}
-                marginLeft="5px"
-                size={15}
-                color="#fff"
-                style={{
-                  width: 40,
-                  height: 30,
-                  //Below lines will help to set the border radius
-                  borderBottomLeftRadius: 30,
-                  borderBottomRightRadius: 30,
-                  borderTopRightRadius: 30,
-                  borderTopLeftRadius: 30,
-                  overflow: "hidden",
-                }}
-              ></Icon.Button>
-              <Text
-                style={{
-                  fontSize: 12,
-                  fontWeight: "bold",
-                  marginStart: 10,
-                  marginEnd: 10,
-                }}
-              >
-                Rs. 5,200.00
-              </Text>
-            </View>
-          </View>
         </View>
       </View>
       <View
@@ -239,13 +148,21 @@ export default function Cart() {
           Continue
         </Icon.Button>
       </View>
-      <view>
-        <Icon.Button name="" backgroundColor="none" color="black"></Icon.Button>
+      <view
+        style={{
+          flexDirection: "row",
+          width: 150,
+        }}
+      >
+        <Icon.Button
+          name="long-arrow-alt-left"
+          backgroundColor="none"
+          color="black"
+        ></Icon.Button>
         <Text
           style={{
             fontSize: 15,
-            marginStart: 15,
-            marginTop: 80,
+
             color: "#223F98",
           }}
         >
