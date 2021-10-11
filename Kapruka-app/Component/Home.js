@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, ScrollView, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Footer from "./Footer";
 
@@ -18,6 +18,20 @@ export default class Home extends Component {
         width: 82,
         backgroundColor: "#FFFFFF",
         borderRadius: 8,
+      },
+    });
+    const styles1 = StyleSheet.create({
+      categoryBox: {
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 5,
+        height: 119,
+        marginLeft: 20,
+        borderColor: "#C4C4C4",
+        alignItems: "center",
+        justifyContent: "center",
+        width: 185,
+        borderRadius: 25,
       },
     });
 
@@ -121,34 +135,98 @@ export default class Home extends Component {
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
                 flexDirection: "column",
               }}
             >
-              <Text>Pams</Text>
-              <Text>Rasa</Text>
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 15,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                cake
+              </Text>
             </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="shopping-basket"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 5,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Grocery
+              </Text>
+            </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="gamepad"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 15,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Toys
+              </Text>
+            </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 5,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Flowers
+              </Text>
+            </view>
           </View>
         </View>
         <View
@@ -161,31 +239,139 @@ export default class Home extends Component {
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 2,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Hampers
+              </Text>
+            </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 5,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Clothers
+              </Text>
+            </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 10,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Shoes
+              </Text>
+            </view>
           </View>
           <View style={styles.boxContainer}>
             <view
               style={{
-                width: 40,
+                width: 60,
+                flexDirection: "column",
               }}
-            ></view>
+            >
+              <Icon.Button
+                name="birthday-cake"
+                backgroundColor="none"
+                color="#223F98"
+                size={40}
+              ></Icon.Button>
+              <Text
+                style={{
+                  marginLeft: 10,
+                  color: "#808080",
+                  alignItems: "center",
+                }}
+              >
+                Books
+              </Text>
+            </view>
           </View>
+        </View>
+        <View
+          style={{
+            marginTop: 30,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: "24px",
+              width: "85%",
+              fontSize: 22,
+              marginStart: 20,
+              fontWeight: 400,
+              color: "black",
+            }}
+          >
+            Special Promotions
+          </Text>
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            marginTop: 30,
+            // height: "17%"
+          }}
+        >
+          <ScrollView horizontal={true} showsVerticalScrollIndicator={false}>
+            <Image
+              style={styles1.categoryBox}
+              source={require("../images/cake.png")}
+            ></Image>
+            <Image
+              style={styles1.categoryBox}
+              source={require("../images/flower.png")}
+            ></Image>
+            <Image
+              style={styles1.categoryBox}
+              source={require("../images/fruites.png")}
+            ></Image>
+          </ScrollView>
         </View>
         <View>
           <Footer />
