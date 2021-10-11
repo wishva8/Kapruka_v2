@@ -51,21 +51,132 @@ export default function Cart() {
       <View
         style={{
           height: 120,
-          flexDirection: "row",
           paddingTop: 10,
           paddingStart: 20,
           width: "100%",
         }}
       >
         <View style={styles.boxContainer}>
-          <view
+          <View
             style={{
               width: 10,
               height: 10,
+              flexDirection: "row",
             }}
           >
-            <Image source={require("../images/Blackforest_1.png")}></Image>
-          </view>
+            <Image
+              source={require("../images/Blackforest_1.png")}
+              style={{
+                width: 70,
+                height: 50,
+                marginTop: -20,
+                marginLeft: -160,
+              }}
+            ></Image>
+          </View>
+          <View
+            style={{
+              flexDirection: "column",
+            }}
+          >
+            <Text
+              style={{
+                marginLeft: 45,
+                marginTop: -30,
+                fontWeight: "bold",
+                alignItems: "end",
+                marginLeft: 80,
+              }}
+            >
+              Black Forest 1kg
+            </Text>
+            <View
+              style={{
+                flexDirection: "row",
+                marginLeft: 70,
+                marginTop: 10,
+              }}
+            >
+              <Icon.Button
+                name="minus"
+                backgroundColor="#223F98"
+                borderRadius={15}
+                size={15}
+                color="#fff"
+                style={{
+                  width: 50,
+                  height: 30,
+                  overflow: "hidden",
+                  marginLeft: "20%",
+                }}
+              ></Icon.Button>
+              <Text
+                style={{
+                  fontSize: 22,
+                  fontWeight: 500,
+                  marginStart: 10,
+                  marginEnd: 10,
+                }}
+              >
+                2
+              </Text>
+
+              <Icon.Button
+                name="plus"
+                backgroundColor="#223F98"
+                borderRadius={15}
+                marginLeft="5px"
+                size={15}
+                color="#fff"
+                style={{
+                  width: 50,
+                  height: 30,
+                  borderBottomLeftRadius: 30,
+                  borderBottomRightRadius: 30,
+                  borderTopRightRadius: 30,
+                  borderTopLeftRadius: 30,
+                  overflow: "hidden",
+                  marginLeft: "20%",
+                }}
+              ></Icon.Button>
+            </View>
+            <View
+              style={{
+                flexDirection: "column",
+                marginLeft: 10,
+              }}
+            >
+              <Text
+                style={{
+                  marginLeft: 200,
+                  marginTop: -58,
+                  alignItems: "end",
+                }}
+              >
+                RS 2,600 x 2
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontWeight: "bold",
+                  marginStart: 201,
+                  marginTop: 15,
+                  marginEnd: 10,
+                }}
+              >
+                Rs. 5,200.00
+              </Text>
+            </View>
+            <Image
+              source={require("../images/delete.png")}
+              style={{
+                width: 15,
+                height: 15,
+                marginLeft: 300,
+                marginTop: -48,
+              }}
+            ></Image>
+          </View>
         </View>
       </View>
       <View
@@ -78,13 +189,126 @@ export default function Cart() {
         }}
       >
         <View style={styles.boxContainer}>
-          <view
+          <View
             style={{
-              marginLeft: 45,
-              marginTop: 15,
-              width: 200,
+              width: 10,
+              height: 10,
+              flexDirection: "row",
             }}
-          ></view>
+          >
+            <Image
+              source={require("../images/Blackforest_1.png")}
+              style={{
+                width: 70,
+                height: 50,
+                marginTop: -20,
+                marginLeft: -160,
+              }}
+            ></Image>
+          </View>
+          <View
+            style={{
+              flexDirection: "column",
+            }}
+          >
+            <Text
+              style={{
+                marginLeft: 45,
+                marginTop: -30,
+                fontWeight: "bold",
+                alignItems: "end",
+                marginLeft: 80,
+              }}
+            >
+              Black Forest 1kg
+            </Text>
+            <View
+              style={{
+                flexDirection: "row",
+                marginLeft: 70,
+                marginTop: 10,
+              }}
+            >
+              <Icon.Button
+                name="minus"
+                backgroundColor="#223F98"
+                borderRadius={15}
+                size={15}
+                color="#fff"
+                style={{
+                  width: 50,
+                  height: 30,
+                  overflow: "hidden",
+                  marginLeft: "20%",
+                }}
+              ></Icon.Button>
+              <Text
+                style={{
+                  fontSize: 22,
+                  fontWeight: 500,
+                  marginStart: 10,
+                  marginEnd: 10,
+                }}
+              >
+                1
+              </Text>
+
+              <Icon.Button
+                name="plus"
+                backgroundColor="#223F98"
+                borderRadius={15}
+                marginLeft="5px"
+                size={15}
+                color="#fff"
+                style={{
+                  width: 50,
+                  height: 30,
+                  borderBottomLeftRadius: 30,
+                  borderBottomRightRadius: 30,
+                  borderTopRightRadius: 30,
+                  borderTopLeftRadius: 30,
+                  overflow: "hidden",
+                  marginLeft: "20%",
+                }}
+              ></Icon.Button>
+            </View>
+            <View
+              style={{
+                flexDirection: "column",
+                marginLeft: 10,
+              }}
+            >
+              <Text
+                style={{
+                  marginLeft: 200,
+                  marginTop: -58,
+                  alignItems: "end",
+                }}
+              >
+                RS 2,600 x 1
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: "bold",
+                  marginStart: 201,
+                  marginTop: 15,
+                  marginEnd: 10,
+                }}
+              >
+                Rs. 2,600.00
+              </Text>
+            </View>
+            <Image
+              source={require("../images/delete.png")}
+              style={{
+                width: 15,
+                height: 15,
+                marginLeft: 300,
+                marginTop: -48,
+              }}
+            ></Image>
+          </View>
         </View>
       </View>
 
@@ -148,27 +372,32 @@ export default function Cart() {
           Continue
         </Icon.Button>
       </View>
-      <view
+      <View
         style={{
           flexDirection: "row",
-          width: 150,
+          paddingLeft: 5,
         }}
       >
-        <Icon.Button
-          name="long-arrow-alt-left"
-          backgroundColor="none"
-          color="black"
-        ></Icon.Button>
+        <Image
+          source={require("../images/back.png")}
+          style={{
+            width: 50,
+            height: 25,
+            marginTop: 150,
+          }}
+        ></Image>
         <Text
           style={{
             fontSize: 15,
-
+            fontWeight: "bold",
             color: "#223F98",
+            marginTop: 150,
+            paddingLeft: 13,
           }}
         >
           Continue Shopping
         </Text>
-      </view>
+      </View>
       <Footer></Footer>
     </View>
   );

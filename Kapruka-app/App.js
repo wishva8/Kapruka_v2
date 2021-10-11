@@ -18,10 +18,10 @@ export default function App() {
       {/* <Register></Register> */}
       {/* <Login></Login> */}
       {/* <Product></Product> */}
-      {/* <Cart></Cart> */}
-      <NavHead></NavHead>
-      <Shop/>
-      <Footer></Footer>
+      <Cart></Cart>
+      {/* <NavHead></NavHead> */}
+      {/* <Shop /> */}
+      {/* <Footer></Footer> */}
     </View>
   );
 }
