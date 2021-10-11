@@ -7,6 +7,7 @@ import Register from "./Component/Register";
 import Cart from "./Component/Cart";
 import Footer from "./Component/Footer";
 import NavHead from "./Component/NavHead";
+import Home from "./Component/Home";
 
 export default function App() {
   return (
@@ -17,8 +18,9 @@ export default function App() {
       {/* <Register></Register> */}
       {/* <Login></Login> */}
       {/* <Product></Product> */}
-      <Cart></Cart>
+      {/* <Cart></Cart> */}
       {/* <NavHead></NavHead> */}
+      <Home></Home>
       {/* <Footer></Footer> */}
     </View>
   );

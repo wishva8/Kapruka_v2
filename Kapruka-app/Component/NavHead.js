@@ -41,12 +41,23 @@ export default class NavHead extends Component {
               size={30}
             ></Icon.Button>
           </View>
+          <View
+            style={{
+              marginTop: "5px",
+              marginLeft: 70,
+            }}
+          >
+            <Icon.Button
+              name="cart-plus"
+              backgroundColor="none"
+              color="white"
+              size={30}
+            ></Icon.Button>
+          </View>
 
           <View
             style={{
               alignItems: "end",
-              width: "50%",
-              marginRight: 40,
               marginTop: "5px",
               justifyContent: "flex-end",
             }}
