@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
-import { Text, View, TextInput, Image, Button, TouchableOpacity } from 'react-native'
-// import {ImagePicker,launchImageLibrary} from "react-native-image-picker"
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { Text, View, Button, TextInput } from 'react-native'
 import { launchImageLibrary } from 'react-native-image-picker'
-export default class AddCategory extends Component {
-
+export default class AddProduct extends Component {
   handelChoosePhoto = () => {
     const option = {}
     console.log("test");
@@ -13,7 +10,6 @@ export default class AddCategory extends Component {
     })
 
   }
-
   render() {
     return (
       <View style={{
@@ -23,20 +19,21 @@ export default class AddCategory extends Component {
       }}>
         <Text style={{
           fontSize: 24
-        }}>Add Category</Text>
+        }}>Add Product</Text>
 
 
 
 
         <Button
-          color="none"
+
+          // color="none"
           style={{
-            backgroundColoer: "none"
+            // backgroundColoer: "none"
           }}
           onPress={this.handelChoosePhoto}
 
         >
-          <Image></Image>
+         
 
         </Button>
 
@@ -63,6 +60,41 @@ export default class AddCategory extends Component {
           flexDirection: "row",
         }}>
           <TextInput
+            placeholder="Quantity"
+            style={{
+              height: 40,
+              marginTop: 10,
+              margin: 12,
+              width: "100%",
+              borderWidth: 1,
+              padding: 10,
+              borderRadius: "8px",
+              borderColor: "#C4C4C4",
+              alignContent: 'center'
+            }}></TextInput>
+        </View>
+
+        <View style={{
+          flexDirection: "row",
+        }}>
+          <TextInput
+            placeholder="Price"
+            style={{
+              height: 40,
+              marginTop: 10,
+              margin: 12,
+              width: "100%",
+              borderWidth: 1,
+              padding: 10,
+              borderRadius: "8px",
+              borderColor: "#C4C4C4",
+              alignContent: 'center'
+            }}></TextInput>
+        </View>
+        <View style={{
+          flexDirection: "row",
+        }}>
+          <TextInput
             placeholder="Description"
             style={{
               height: 40,
@@ -75,7 +107,6 @@ export default class AddCategory extends Component {
               borderColor: "#C4C4C4",
               alignContent: 'center'
             }}></TextInput>
-
         </View>
         <View style={{
           flexDirection: "row",
