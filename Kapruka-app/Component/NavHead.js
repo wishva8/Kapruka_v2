@@ -8,7 +8,7 @@ export default class NavHead extends Component {
       <View
         style={{
           width: "100%",
-          height: "6%",
+          height: "8%",
           backgroundColor: "#223F98",
           borderBottomEndRadius: 25,
           borderBottomStartRadius: 25,

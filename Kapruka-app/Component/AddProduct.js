@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { Text, View, Button, TextInput } from 'react-native'
+import { Text, View, Button, TextInput, TouchableOpacity } from 'react-native'
 import { launchImageLibrary } from 'react-native-image-picker'
 export default class AddProduct extends Component {
   handelChoosePhoto = () => {
     const option = {}
     console.log("test");
-    launchImageLibrary(option, response => {
-      console.log(response);
-    })
+    // launchImageLibrary(option, response => {
+    //   console.log(response);
+    // })
 
   }
   render() {
@@ -15,6 +15,7 @@ export default class AddProduct extends Component {
       <View style={{
         width: "100%",
         height: "100%",
+        paddingTop: "20%",
         padding: 20
       }}>
         <Text style={{
@@ -23,19 +24,29 @@ export default class AddProduct extends Component {
 
 
 
-
-        <Button
-
-          // color="none"
-          style={{
-            // backgroundColoer: "none"
-          }}
+        <TouchableOpacity
           onPress={this.handelChoosePhoto}
+          style={{
+            borderRadius: 10,
+            marginTop: 45,
+            margin: 12,
+            padding: "20%",
+            borderColor: "#C4C4C4",
+            borderWidth: 1,
+            height: "30%",
+            alignItems: "center",
 
-        >
-         
+          }}>
+          
+          <Text style={{
+            marginTop: "auto",
+            marginBottom: "auto",
+          }}>
+            Upload background image
+          </Text>
+        </TouchableOpacity>
 
-        </Button>
+       
 
         <View style={{
           flexDirection: "row",
@@ -45,7 +56,7 @@ export default class AddProduct extends Component {
             placeholder="Name"
             style={{
               height: 40,
-              marginTop: 25,
+              marginTop: 10,
               margin: 12,
               width: "100%",
               borderWidth: 1,

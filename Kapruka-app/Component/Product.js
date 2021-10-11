@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 import { Rating, AirbnbRating } from "react-native-ratings";
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -76,7 +76,7 @@ export default function Product() {
         >
           <Image
             style={{
-              width: "10%",
+              width: "60%",
               height: "55%",
             }}
             source={require("../images/Blackforest_2.png")}
@@ -239,56 +239,53 @@ export default function Product() {
         </Text>
       </View>
 
-      <View
-        style={{
-          flexDirection: "row",
-          paddingTop: "25px",
-          marginLeft: 20,
-          marginTop: 20,
-        }}
-      >
-        <View
-          style={{
-            // paddingRight:"50px"
-            marginRight: 10,
-          }}
-        >
-          <Icon.Button
+
+      <View style={{
+        flexDirection: "row",
+        marginTop:50,
+        padding: 15
+      }}>
+        <View style={{
+          flexDirection: "column",
+          width: "40%",
+
+        }}>
+
+          <Button
+            width="100%"
+            title="Buy Now"
+            color="#223F98"
             style={{
-              borderRadius: "5px",
-              width: "156px",
-              height: "35px",
-              textAlign: "center",
-              borderColor: "#223F98",
-              paddingLeft: "40px",
-              borderWidth: "0.5px",
-              backgroundColor: "#223F98",
-              fontWeight: 300,
-              // fontSize:"30px"
+
+
             }}
-          >
-            Buy Now
-          </Icon.Button>
+          />
+        </View>
+        <View style={{
+          flexDirection: "column",
+          width: "20%",
+
+        }}></View>
+        <View style={{
+          flexDirection: "column",
+          width: "40%",
+
+        }}>
+
+          <Button
+            width="100%"
+            title="Add To Cart"
+            color="#223F98"
+            style={{
+
+
+            }}
+          />
         </View>
 
-        <View>
-          <Icon.Button
-            style={{
-              borderRadius: "8px",
-              width: "156px",
-              height: "35px",
-              textAlign: "center",
-              backgroundColor: "#223F98",
-              paddingLeft: "25px",
-              color: "#223F98",
-              fontWeight: 300,
-              fontSize: "30px",
-            }}
-          >
-            Add To Cart
-          </Icon.Button>
-        </View>
+
       </View>
+
     </View>
   );
 }

@@ -19,6 +19,7 @@ export default class AddCategory extends Component {
       <View style={{
         width: "100%",
         height: "100%",
+        marginTop:"20%",
         padding: 20
       }}>
         <Text style={{
@@ -84,6 +85,7 @@ export default class AddCategory extends Component {
           <View style={{
             flexDirection: "column",
             width: "40%",
+            
 
           }}>
 

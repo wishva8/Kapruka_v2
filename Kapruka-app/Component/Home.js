@@ -72,6 +72,7 @@ export default class Home extends Component {
               }}
             >
               <Icon.Button
+                onPress={() => this.props.navigation.navigate('Shop')}
                 name="bars"
                 backgroundColor="none"
                 color="white"
@@ -85,6 +86,7 @@ export default class Home extends Component {
               }}
             >
               <Icon.Button
+                onPress={() => this.props.navigation.navigate('Shop')}
                 name="cart-plus"
                 backgroundColor="none"
                 color="white"
