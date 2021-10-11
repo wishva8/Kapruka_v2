@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
-import Shop from "./shop";
 
 export default class Footer extends Component {
- 
   render() {
     return (
       <View
@@ -50,8 +48,7 @@ export default class Footer extends Component {
             }}
           >
             <Icon.Button
-            onPress={()=>this.props.navigation.navigate('Shop')}
-            name="search"
+              name="search"
               backgroundColor="none"
               color="white"
               size={30}
@@ -64,13 +61,21 @@ export default class Footer extends Component {
               justifyContent: "flex-start",
             }}
           >
-            <Icon.Button
-            Component={Shop}
+            {/* <Icon.Button
               name="shop"
               backgroundColor="none"
               color="white"
               size={30}
-            ></Icon.Button>
+            ></Icon.Button> */}
+            <Image
+              source={require("../images/store.png")}
+              style={{
+                width: 28,
+                height: 28,
+                marginLeft: 5,
+                marginTop: 13,
+              }}
+            ></Image>
           </View>
           <View
             style={{
