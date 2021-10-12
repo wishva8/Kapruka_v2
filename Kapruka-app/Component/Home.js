@@ -56,7 +56,7 @@ export default class Home extends Component {
             position: "absolute",
           }}
         >
-          <View
+          {/* <View
             style={{
               flexDirection: "row",
               marginStart: 20,
@@ -106,7 +106,7 @@ export default class Home extends Component {
                 size={30}
               ></Icon.Button>
             </View>
-          </View>
+          </View> */}
         </View>
         <View
           style={{
