@@ -1,11 +1,15 @@
 export default[
     {
         name: 'Cakes',
-        iconType: 'Fontawsome',
-        iconName: 'birthday-cake'
+        // iconType: 'Fontawsome',
+        // iconName: 'birthday-cake'
+        iconType: 'Material',
+        iconName: 'cake-variant'
+        
     },
     {
         name: 'Grocery',
+        Image:'grocery',
         iconType: 'Fontawsome',
         iconName: 'shopping-basket'
     },
@@ -16,27 +20,32 @@ export default[
     },
     {
         name: 'Flowers',
-        iconType: 'Fontawsome',
+        iconType: 'Material',
         iconName: 'flower'
     },
     {
         name: 'Hampers',
-        iconType: 'Fontawsome',
-        iconName: 'box'
+        iconType: 'Material',
+        iconName: 'gift'
     },
     {
         name: 'Clothes',
-        iconType: 'Fontawsome',
-        iconName: 'tshirt'
+        iconType: 'Material',
+        iconName: 'tshirt-crew'
     },
     {
         name: 'Shoes',
-        iconType: 'Fontawsome',
-        iconName: 'tv'
+        iconType: 'Material',
+        iconName: 'shoe-formal'
     },
     {
         name: 'Books',
         iconType: 'Fontawsome',
         iconName: 'book'
+    },
+    {
+        name: 'Electronics',
+        iconType: 'Fontawsome',
+        iconName: 'tv'
     }
 ]

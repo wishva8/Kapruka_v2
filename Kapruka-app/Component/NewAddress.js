@@ -3,6 +3,8 @@ import { View, Text, TextInput, Button } from 'react-native'
 // import { Rating, AirbnbRating } from 'react-native-ratings';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import NavHead from './NavHead';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import Footer from './Footer';
 
 export default function NewAddress() {
     return (
@@ -60,7 +62,7 @@ export default function NewAddress() {
             <Text style={{
                 fontSize: 22,
                 marginStart: 25,
-                marginTop: "20%"
+                marginTop: 20
             }}>Add New Address</Text>
             <View></View>
             <View style={{
@@ -179,6 +181,7 @@ export default function NewAddress() {
             }} >
 
                 <Icon.Button
+                backgroundColor="none"
                     style={{
                         borderRadius: "15px",
                         width: "120px",
@@ -191,13 +194,32 @@ export default function NewAddress() {
                     }}
                 >Add</Icon.Button>
             </View >
-
-            <Text style={{
-                fontSize: 14,
-                marginStart: 15,
-                marginTop: 80,
-                color: "#223F98"
-            }}>Continue Shopping</Text>
+            <View
+      style={{
+        paddingTop:"20%"
+      }}>
+      <MaterialCommunityIcons
+      name="keyboard-backspace"
+      color="black"
+      size="300%"
+      style={{
+        width:"10%"
+      }}>
+      
+      
+      </MaterialCommunityIcons>
+      <Text
+        style={{
+          fontSize: 15,
+          paddingLeft: 50,
+          marginTop: -35,
+          color: "#223F98",
+        }}
+      >
+        Continue Shopping
+      </Text>
+      </View>
+      <Footer/>
         </View>
     )
 }

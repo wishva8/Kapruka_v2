@@ -56,7 +56,7 @@ export default class Home extends Component {
             position: "absolute",
           }}
         >
-          <View
+          {/* <View
             style={{
               flexDirection: "row",
               marginStart: 20,
@@ -72,6 +72,7 @@ export default class Home extends Component {
               }}
             >
               <Icon.Button
+                onPress={() => this.props.navigation.navigate('Shop')}
                 name="bars"
                 backgroundColor="none"
                 color="white"
@@ -85,6 +86,7 @@ export default class Home extends Component {
               }}
             >
               <Icon.Button
+                onPress={() => this.props.navigation.navigate('Shop')}
                 name="cart-plus"
                 backgroundColor="none"
                 color="white"
@@ -104,7 +106,7 @@ export default class Home extends Component {
                 size={30}
               ></Icon.Button>
             </View>
-          </View>
+          </View> */}
         </View>
         <View
           style={{
@@ -139,12 +141,20 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/cakeHome.png")}
+                style={{
+                  width: 50,
+                  height: 65,
+                  marginLeft: 5,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 15,
@@ -152,7 +162,7 @@ export default class Home extends Component {
                   alignItems: "center",
                 }}
               >
-                cake
+                Cake
               </Text>
             </view>
           </View>
@@ -163,12 +173,20 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="shopping-basket"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/grocery.png")}
+                style={{
+                  width: 50,
+                  height: 65,
+                  marginLeft: 5,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 5,
@@ -187,12 +205,22 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="gamepad"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/toys.png")}
+                style={{
+                  width: 89,
+                  height: 65,
+                  marginLeft: -14,
+                  marginTop: 5,
+                  marginBottom: -8,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 15,
@@ -211,12 +239,21 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/flowerBoq.png")}
+                style={{
+                  width: 73.15,
+                  height: 79,
+                  marginLeft: -2,
+                  marginBottom: -13,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 5,
@@ -243,12 +280,20 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/hamper.png")}
+                style={{
+                  width: 50,
+                  height: 65,
+                  marginLeft: 5,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 2,
@@ -267,12 +312,20 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/clothes.png")}
+                style={{
+                  width: 65,
+                  height: 65,
+                  marginLeft: -2,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 5,
@@ -280,7 +333,7 @@ export default class Home extends Component {
                   alignItems: "center",
                 }}
               >
-                Clothers
+                Clothes
               </Text>
             </view>
           </View>
@@ -291,12 +344,21 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/shoes.png")}
+                style={{
+                  width: 65,
+                  height: 65,
+                  marginLeft: -2,
+                  marginBottom: -2,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 10,
@@ -315,12 +377,21 @@ export default class Home extends Component {
                 flexDirection: "column",
               }}
             >
-              <Icon.Button
+              {/* <Icon.Button
                 name="birthday-cake"
                 backgroundColor="none"
                 color="#223F98"
                 size={40}
-              ></Icon.Button>
+              ></Icon.Button> */}
+              <Image
+                source={require("../images/books.png")}
+                style={{
+                  width: 65,
+                  height: 65,
+                  marginLeft: -2,
+                  marginBottom: -2,
+                }}
+              ></Image>
               <Text
                 style={{
                   marginLeft: 10,
@@ -361,7 +432,7 @@ export default class Home extends Component {
           <ScrollView horizontal={true} showsVerticalScrollIndicator={false}>
             <Image
               style={styles1.categoryBox}
-              source={require("../images/cake.png")}
+              source={require("../images/promoCake.png")}
             ></Image>
             <Image
               style={styles1.categoryBox}

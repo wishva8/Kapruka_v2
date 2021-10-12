@@ -16,7 +16,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { color } from "react-native-reanimated";
 import SideNavItems from "./Component/SideNavItems";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+// import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 const Drawer = createDrawerNavigator();
 
 export default function App() {
@@ -45,10 +47,10 @@ export default function App() {
             name={drawer.name}
             options={{
               drawerIcon:({focused})=>
-              drawer.iconType==='FontAwesome' ?
-              <FontAwesome
+              drawer.iconType==='Material' ?
+              <MaterialCommunityIcons
               name={drawer.iconName}
-              size={24}
+              size={25}
               color="black"
               />
               :
@@ -77,11 +79,12 @@ export default function App() {
               drawer.name==='Cakes' ? DeliveryDetails
               : drawer.name==='Grocery' ? NewAddress
               : drawer.name=== 'Toys' ? Shop
-              : drawer.name=== 'Flowers' ? Product
+              : drawer.name=== 'Flowers' ? Home
               : drawer.name=== 'Hampers' ? Product
               : drawer.name=== 'Clothes' ? Product
               : drawer.name=== 'Shoes' ? Product
               : drawer.name=== 'Books' ? Product
+              : drawer.name=== 'Electronics' ? Product
               : Home
             }
             />)

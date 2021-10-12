@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { RadioButton } from "react-native-paper";
 import Icon from "react-native-vector-icons/FontAwesome";
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Footer from "./Footer";
 import NavHead from "./NavHead";
 
@@ -188,17 +189,31 @@ export default function DeliveryDetails() {
           Pay Now
         </Icon.Button>
       </View>
-
+      <View
+      style={{
+        paddingTop:"20%"
+      }}>
+      <MaterialCommunityIcons
+      name="keyboard-backspace"
+      color="black"
+      size="300%"
+      style={{
+        width:"10%"
+      }}>
+      
+      
+      </MaterialCommunityIcons>
       <Text
         style={{
-          fontSize: 14,
-          paddingLeft: 25,
-          marginTop: 80,
+          fontSize: 15,
+          paddingLeft: 50,
+          marginTop: -35,
           color: "#223F98",
         }}
       >
         Continue Shopping
       </Text>
+      </View>
       <Footer/>
     </View>
     
